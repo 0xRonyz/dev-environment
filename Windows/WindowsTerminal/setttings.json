@@ -1,0 +1,90 @@
+{
+  "$schema": "https://aka.ms/terminal-profiles-schema",
+
+  "defaultProfile": "{PROFILE GUID}",
+
+ 
+
+  
+  "copyOnSelect": false,
+
+  
+  "copyFormatting": false,
+
+  
+  "profiles":
+  {
+      "defaults":
+      {
+          
+      },
+      "list":
+      [
+          {
+              
+              "guid": "{00000000-0000-0000-0000-000000000000}",
+              "name": "Windows PowerShell",
+              "commandline": "powershell.exe",
+              "hidden": false
+          },
+          {
+              
+              "guid": "{00000000-0000-0000-0000-000000000000}",
+              "name": "Command Prompt",
+              "commandline": "cmd.exe",
+              "hidden": false
+          },
+          {
+              "guid": "{00000000-0000-0000-0000-000000000000}",
+              "name": "WSL Ubuntu",
+              "source": "Windows.Terminal.Wsl",
+      "fontFace": "FiraMono NF",
+      "colorScheme": "Aurelia"
+          },
+          {
+              "guid": "{00000000-0000-0000-0000-000000000000}",
+              "name": "Azure Cloud Shell",
+              "source": "Windows.Terminal.Azure"
+          }
+      ]
+  },
+
+  
+  "schemes": [
+{
+  "name": "Aurelia",
+  "background": "#1a1a1a",
+  "black": "#000000",
+  "blue": "#579BD5",
+  "brightBlack": "#797979",
+  "brightBlue": "#9CDCFE",
+  "brightCyan": "#2BC4E2",
+  "brightGreen": "#1AD69C",
+  "brightPurple": "#975EAB",
+  "brightRed": "#EB2A88",
+  "brightWhite": "#EAEAEA",
+  "brightYellow": "#e9ad95",
+  "cyan": "#00B6D6",
+  "foreground": "#EA549F",
+  "green": "#4EC9B0",
+  "purple": "#714896",
+  "red": "#E92888",
+  "white": "#EAEAEA",
+  "yellow": "#CE9178"
+}
+],
+
+  
+  "actions":
+  [
+      
+      { "command": {"action": "copy", "singleLine": false }, "keys": "ctrl+c" },
+      { "command": "paste", "keys": "ctrl+v" },
+
+      
+      { "command": "find", "keys": "ctrl+shift+f" },
+
+      
+      { "command": { "action": "splitPane", "split": "auto", "splitMode": "duplicate" }, "keys": "alt+shift+d" }
+  ]
+}
